@@ -33,6 +33,8 @@ nav {
     line-height: 10vw;
     color: white;
     background-image: url(./final.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav .gap {
