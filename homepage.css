@@ -7,11 +7,10 @@ body {
 }
 
 main {
-    background-image: url(./i_coped.webp);
-    image-rendering: pixelated;
+    background-image: url(./backdrop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    margin-top: 0;
     height: 64vh;
 }
 

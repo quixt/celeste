@@ -3,4 +3,8 @@
     src: url(./Renogare-Regular.otf);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
