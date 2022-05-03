@@ -1,0 +1,94 @@
+nav {
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    display: block;
+    position: relative;
+    width: 14vw;
+    height: 10vw;
+    cursor: pointer;
+    margin: 0 1vw;
+}
+
+.card>div {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}
+
+.front {
+    box-sizing: border-box;
+    /* background-color: #5e8bff; */
+    font-family: "Celeste";
+    text-align: center;
+    line-height: 10vw;
+    color: white;
+    background-image: url(./final.png);
+}
+
+nav .gap {
+    width: 1vw;
+    position: relative;
+    top: 10px;
+}
+
+.card:hover .front {
+    transform: rotateX(180deg);
+}
+
+.card:hover .back {
+    transform: rotateX(0deg);
+}
+
+.back {
+    position: relative;
+    box-sizing: border-box;
+    transform: rotateX(180deg);
+    backdrop-filter: brightness(50%);
+    padding: 10px;
+    padding-top: 2vw;
+    line-height: 25px;
+    box-sizing: border-box;
+    background-color: #cf4136;
+    text-align: center;
+    font-weight: 500;
+    color: #f2f2f2;
+    font-family: "Noto Sans", sans-serif;
+    border-radius: 6px;
+    border: 6px solid #fff;
+}
+
+.back p {
+    z-index: 10;
+}
+
+.back img {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+    object-position: center;
+    image-rendering: crisp-edges;
+}
+
+.back blackout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}

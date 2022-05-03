@@ -1,0 +1,38 @@
+/* funni 8*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+
+main {
+    background-image: url(./i_coped.webp);
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 64vh;
+}
+
+header {
+    position: relative;
+    height: 35vh;
+    width: 100vw;
+    display: block;
+    background-image: linear-gradient(to bottom right, #2b0b23, #0d1631);
+    padding-top: 1.5vh;
+}
+
+header img {
+    width: auto;
+    height: 30vh;
+    margin: 0 auto;
+    display: block;
+}
+
+#bar {
+    height: 1vh;
+    width: 100vw;
+    background-color: rgb(107, 0, 80);
+}
