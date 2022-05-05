@@ -2,9 +2,16 @@
     font-family: 'Celeste';
     src: url(./Renogare-Regular.otf);
 }
-
+*{
+    box-sizing: border-box;
+}
 body {
     overflow-x: hidden;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+h1 {
+    font-family: "Celeste";
+    font-size: 5vw;
+}
