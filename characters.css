@@ -1,0 +1,13 @@
+#chars {
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+#scroll {
+    height: 2000px;
+}
+
+#char-name {
+    font-family: "Celeste";
+    color: white;
+}

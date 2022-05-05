@@ -1,30 +1,32 @@
 nav {
-    padding-top:4vh;
-    padding-left:2vw;
+    padding-top: 4vh;
+    padding-left: 2vw;
     display: flex;
     flex-direction: column;
-    width:100%;
-    height:100%;
-    background-image: url(https://64.media.tumblr.com/039bbb938370460ad0cc6f27c3b26f4f/tumblr_p0pl9ffnkM1tz8xg5o3_1280.jpg);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #2b0b23, #0d1631);
 }
 
 nav img {
-    width:12vw;
-    height:auto;
-    display:block;
+    width: 12vw;
+    height: auto;
+    display: block;
 }
+
 nav .big {
-    font-size:3.5vw;
+    font-size: 3.5vw;
 }
+
 nav a {
     font-family: "Celeste", sans-serif;
-    color:white;
+    color: white;
     -webkit-text-stroke: 1px black;
-    font-size:2vw;
+    font-size: 2vw;
     text-decoration: none;
-    width:fit-content;
+    width: fit-content;
 }
+
 nav a:hover {
     color: #fefd86;
     animation: flash .2s infinite;
@@ -32,12 +34,20 @@ nav a:hover {
 
 @keyframes flash {
     50% {
-        color:#82f07f;
-        
+        color: #82f07f;
     }
-    
 }
 
+#flash {
+    background-color: #2b0b23;
+    border: none;
+    width: 4vw;
+    padding: 3px;
+    cursor: pointer;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    border-radius: 4px;
+}
 
 
 /* .card {

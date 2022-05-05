@@ -6,19 +6,11 @@ body {
     background-color: #fff;
 }
 
-main {
-    /* background-image: url(https://cutewallpaper.org/21/celeste-game-wallpaper/This-screenshot-ended-up-being-my-wallpaper,-not-exactly-.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    background-image: url(https://www.gameuidatabase.com/uploads/Celeste04172020-010156.jpg);
-    background-size: cover;
-    height: 100vh;
-    padding-top: 1px;
-    margin-top: -1px;
-    display:grid;
-    grid-template-columns: 30% 70%;
-    
+.celeste-logo {
+    width: 20vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 header {

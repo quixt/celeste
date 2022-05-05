@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./homepage.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./characters.css">
     <link rel="icon" href="./favicon.ico">
 
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -22,10 +23,7 @@
 </head>
 
 <body>
-    <!-- <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Celeste_video_game_logo.png" alt="Celeste Logo">
-    </header>
-    <div id="bar"></div> -->
+
 
     <main>
         <nav>
@@ -36,43 +34,23 @@
             <a href="characters.html">Characters</a>
             <a href="mechanics.html">Mechanics</a>
             <button id="flash">Flash: ON</button>
-            <!-- <a class="card" href="./chapters.html">
-                <div class="front">
-                    Chapters
-                </div>
-                <div class="back">
-                    <p>All about Chapters 1, 2, and 3</p>
-                    <blackout></blackout>
-                    <img src="./i_coped.webp" alt="Celeste Summit">
-                </div>
-            </a>
-            <a class="card" href="./characters.html">
-                <div class="front">
-                    Characters
-                </div>
-                <div class="back">
-                    <p>Who we've found and what we know about them</p>
-                    <blackout></blackout>
-                    <img src="https://miro.medium.com/max/1200/1*sGC2XRNPEdzSlvZd6d9HTA.jpeg" alt="Celeste Characters">
-                </div>
-            </a>
-            <a class="card" href="./mechanics.html">
-                <div class="front">
-                    Mechanics
-                </div>
-                <div class="back">
-                    <p>The different mechanics Celeste has</p>
-                    <blackout></blackout>
-                    <img src="https://art.pixilart.com/b6e942447d86a1e.gif" alt="Celeste Mechanics">
-                </div>
-            </a> -->
+
         </nav>
         <section>
-            <img class="celeste-logo" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Celeste_video_game_logo.png" alt="Celeste Logo">
+            <section id="chars">
+                <section id="scroll">
+                    <h1 id="char-name"></h1>
+                </section>
+            </section>
+
         </section>
 
 
     </main>
+
+    <script src="./characters.js"></script>
+
+
     <script>
         var flash = true;
         const flashButton = document.getElementById("flash");

@@ -2,14 +2,29 @@
     font-family: 'Celeste';
     src: url(./Renogare-Regular.otf);
 }
-*{
+
+* {
     box-sizing: border-box;
 }
+
 body {
     overflow-x: hidden;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+main {
+    /* background-image: url(https://cutewallpaper.org/21/celeste-game-wallpaper/This-screenshot-ended-up-being-my-wallpaper,-not-exactly-.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-image: url(i_coped.webp);
+    background-size: cover;
+    height: 100vh;
+    padding-top: 1px;
+    margin-top: -1px;
+    display: grid;
+    grid-template-columns: 20% 70%;
+}
 
 h1 {
     font-family: "Celeste";
