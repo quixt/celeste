@@ -4,10 +4,41 @@
 }
 
 #scroll {
-    height: 2000px;
+    height: 4000px;
+    position: relative;
 }
 
 #char-name {
     font-family: "Celeste";
     color: white;
+    margin: 0;
+}
+
+#info {
+    width: 60%;
+}
+
+#char-desc {
+    font-family: "Celeste", sans-serif;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    transition: all .5s;
+}
+
+#char-img {
+    width: 40%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+#char {
+    width: 65%;
+    display: flex;
+    margin: 0 auto;
+    position: sticky;
+    height: 50vh;
+    left: 25%;
+    top: 50px;
+    background-color: #5e8bff;
 }
