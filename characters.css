@@ -89,3 +89,21 @@ main {
     text-decoration: underline;
     
 }
+
+#up-to-top {
+    position:sticky;
+    z-index:1000;
+    bottom:10px;
+    left:100%;
+    background-color:#2b0b23;
+    color:white;
+    font-family: "Celeste", sans-serif;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    right:5%;
+}
+#up-to-top:hover {
+    cursor:pointer;
+    background-color:#1f0819;
+}

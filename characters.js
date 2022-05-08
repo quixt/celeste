@@ -1,6 +1,7 @@
 var main = document.getElementsByTagName("main")[0];
 var mainBg = document.getElementById("main-bg");
 const scroll = document.querySelector("#chars");
+const utt = document.querySelector("#up-to-top");
 var background = 0;
 
 const setBackground = (url) => {
@@ -12,7 +13,11 @@ const setBackground = (url) => {
 }
 scroll.scrollTop = 0;
 setBackground("./firstch.jpg");
+utt.addEventListener("click", () => {
+    scroll.scrollTop = 0;
+});
 scroll.addEventListener("scroll", () => {
+    scroll.scrollTop > 500 ? utt.style.visibility = "visible" : utt.style.visibility = "hidden";
     var scrollPos = scroll.scrollTop;
     if(scrollPos >= 0 && scrollPos < 500) {
         if(background !== 1) {
