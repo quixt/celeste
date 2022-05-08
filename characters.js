@@ -1,32 +1,42 @@
-var charName = document.getElementById("char-name");
-var charImg = document.getElementById("char-img");
-var charDesc = document.getElementById("char-desc")
+var main = document.getElementsByTagName("main")[0];
+var mainBg = document.getElementById("main-bg");
 const scroll = document.querySelector("#chars");
+var background = 0;
 
-var charsList = [{
-        charName: "Madeline",
-        desc: "Madeline is a young woman who is determined to climb the mountain known as Celeste. She is brave and determined, and she has a heart of gold. She is also very determined and stubborn, which sometimes gets her into trouble.",
-        src: "https://c.tenor.com/97RZRjmcGQoAAAAC/berum-blurklink.gif"
+const setBackground = (url) => {
+    // mainBg.classList.add("anim");
+    mainBg.src = url;
+    // setTimeout(() => {    mainBg.classList.remove("anim");},500);
 
-    },
-    {
-        charName: "Other Self",
-        desc: "The other self is an entity that exists within the game Celeste as a representation of the player's inner struggles. This character is often shown as a dark reflection of the player, appearing as a doppelganger that taunts and mocks the player's attempts to overcome their challenges. The other self is a constant reminder of the player's own shortcomings and fears, but also serves as a motivator to push them to be better. In many ways, the other self is the player's own worst enemy, but also their biggest ally.",
-        src: "https://c.tenor.com/97RZRjmcGQoAAAAC/berum-blurklink.gif"
-    }
-];
-
+    console.log(mainBg.src)
+}
+scroll.scrollTop = 0;
+setBackground("./firstch.jpg");
 scroll.addEventListener("scroll", () => {
     var scrollPos = scroll.scrollTop;
-    if (scrollPos >= 0 && scrollPos < 500) {
-        let data = charsList[0];
-        charName.innerHTML = data.charName;
-        charDesc.innerHTML = data.desc;
-        charImg.src = data.src;
-    } else if (scrollPos >= 500 && scrollPos < 1000) {
-        let data = charsList[1];
-        charName.innerHTML = data.charName;
-        charDesc.innerHTML = data.desc;
-        charImg.src = data.src;
+    if(scrollPos >= 0 && scrollPos < 500) {
+        if(background !== 1) {
+            background = 1;
+            setBackground("./firstch.jpg");
+            
+        }
+    } else if(scrollPos >= 500 && scrollPos < 1300) {
+        if(background !== 2) {
+            background = 2;
+            setBackground("./badeline.jpg");
+        }
+    
+    } else if(scrollPos >= 1300 && scrollPos < 2100) {
+        if(background !== 3) {
+            background = 3;
+            setBackground("./theo.png");
+        }
+    
+    } else if(scrollPos >= 2100 && scrollPos < 3400) {
+        if(background !== 4) {
+            background = 4;
+            setBackground("./hotel.jpg");
+        }
+    
     }
 });

@@ -39,9 +39,10 @@ nav a:hover {
 }
 
 #flash {
-    background-color: #2b0b23;
+    margin-top:20vh;
+    background-color: #5e8bff;
     border: none;
-    width: 4vw;
+    width: 8vw;
     padding: 3px;
     cursor: pointer;
     color: white;
