@@ -8,7 +8,6 @@
     scroll-behavior: smooth;
 }
 
-
 body {
     overflow-x: hidden;
 }
@@ -19,11 +18,11 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
-    background-image: url(i_coped.webp);
+    background-image: url(https://i.ytimg.com/vi/TOxH0jR5C-w/maxresdefault.jpg);
     background-size: cover;
     height: 100vh;
     padding-top: 1px;
-    z-index:-10;
+    z-index: -10;
     margin-top: -1px;
     display: grid;
     grid-template-columns: 20% 70% 10%;
@@ -35,4 +34,3 @@ h1 {
     font-family: "Celeste";
     font-size: 5vw;
 }
-

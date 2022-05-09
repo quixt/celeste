@@ -34,3 +34,53 @@ header img {
     width: 100vw;
     background-color: rgb(107, 0, 80);
 }
+
+#carousel {
+    width: 30vw;
+    height: 15vw;
+    background-color: #000;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 8px;
+}
+
+#carousel .selector {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin: 3px;
+    border-radius: 50%;
+    background: grey;
+    cursor: pointer;
+}
+
+#carousel .selector:hover {
+    background-color: rgb(107, 107, 107);
+}
+
+#c-imgs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 1vh;
+    left: 0;
+}
+
+.ac {
+    background-color: rgb(94, 139, 255) !important;
+}
+
+.ac:hover {
+    background-color: rgb(80, 119, 218) !important;
+}
