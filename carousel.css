@@ -1,0 +1,93 @@
+#carousel {
+    width: 30vw;
+    height: 15vw;
+    background-color: #000;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 8px;
+}
+
+#carousel .selector {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin: 3px;
+    border-radius: 50%;
+    background: grey;
+    cursor: pointer;
+}
+
+#carousel .selector:hover {
+    background-color: rgb(107, 107, 107);
+}
+
+#c-imgs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 1vh;
+    left: 0;
+}
+
+.ac {
+    background-color: rgb(94, 139, 255) !important;
+}
+
+.ac:hover {
+    background-color: rgb(80, 119, 218) !important;
+}
+
+#next {
+    right: 0;
+    height: 60%;
+    top: 20%;
+    position: absolute;
+}
+
+#strawberry {
+    margin-top: 20px;
+    width: 2vw;
+}
+
+#carousel:hover .switch {
+    opacity: 1;
+}
+
+#prev {
+    left: 0;
+    height: 60%;
+    top: 20%;
+    position: absolute;
+}
+
+.switch {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.7);
+    z-index: 1000;
+    width: 10%;
+    text-align: center;
+    line-height: 60%;
+    display: block;
+    font-size: 200%;
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity .15s ease-in;
+    cursor: pointer;
+}
+
+.va {
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+}

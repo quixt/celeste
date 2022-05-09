@@ -2,6 +2,9 @@ const imgAmount = 5;
 var carousel = document.getElementById("carousel");
 var imgs = document.querySelectorAll(".slide");
 var chooseImg = document.querySelector("#c-imgs");
+var next = document.getElementById("next");
+var prev = document.getElementById("prev");
+var imgSelected = 0;
 console.log(imgs)
 var selectors = []
 
@@ -38,5 +41,20 @@ for (let i = 0; i < imgAmount; i++) {
     createSelectImgButton(chooseImg, i);
 }
 
+next.addEventListener("click", function() {
+    imgSelected++;
+    removeStyles();
+    switchImage(imgSelected % imgAmount);
+    selectors[imgSelected % imgAmount].classList.add("ac");
+})
+prev.addEventListener("click", function() {
+    imgSelected--;
+    if (imgSelected < 0) {
+        imgSelected = 100;
+    }
+    removeStyles();
+    switchImage(imgSelected % imgAmount);
+    selectors[imgSelected % imgAmount].classList.add("ac");
+})
 imgs[0].style.display = "block";
 selectors[0].classList.add("ac");

@@ -6,11 +6,16 @@ body {
     background-color: #fff;
 }
 
+#home {
+    grid-template-columns: 20% 80% !important;
+}
+
 .celeste-logo {
     width: 20vw;
     height: auto;
     display: block;
     margin: 0 auto;
+    margin-top: 10vh;
 }
 
 header {
@@ -22,6 +27,21 @@ header {
     padding-top: 1.5vh;
 }
 
+h3 {
+    color: #70c9e6;
+    margin: 0;
+    text-shadow: 5px 5px #675c83;
+    width: 80vw;
+    font-family: "Celeste", sans-serif;
+}
+
+p {
+    color: white;
+    font-family: "Celeste";
+    width: 50%;
+    margin: 20px auto;
+}
+
 header img {
     width: auto;
     height: 12vh;
@@ -29,58 +49,13 @@ header img {
     display: block;
 }
 
+.mad {
+    color: rgb(255, 94, 94);
+}
+
 #bar {
     height: 1vh;
-    width: 100vw;
+    margin-left: 1px;
+    width: 80vw;
     background-color: rgb(107, 0, 80);
-}
-
-#carousel {
-    width: 30vw;
-    height: 15vw;
-    background-color: #000;
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    border: 1px solid grey;
-}
-
-.slide {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-    border-radius: 8px;
-}
-
-#carousel .selector {
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    margin: 3px;
-    border-radius: 50%;
-    background: grey;
-    cursor: pointer;
-}
-
-#carousel .selector:hover {
-    background-color: rgb(107, 107, 107);
-}
-
-#c-imgs {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: absolute;
-    bottom: 1vh;
-    left: 0;
-}
-
-.ac {
-    background-color: rgb(94, 139, 255) !important;
-}
-
-.ac:hover {
-    background-color: rgb(80, 119, 218) !important;
 }
