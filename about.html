@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="./about.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="./carousel.css">
@@ -14,18 +14,59 @@
 </head>
 
 <body>
-    <div id="carousel">
-        <img class="slide" src="./slide1.png">
-        <img class="slide" src="./bingus.gif">
-        <img class="slide" src="slide3.jpg">
-        <img class="slide" src="slide4.jpg">
-        <img class="slide" src="slide5.jpg">
-        <div id="c-imgs">
+    <main>
+        <nav>
+            <img src="./climb.png" alt="Celeste Climb Button">
+            <a href="index.html" title="Home" class="big">CLIMB</a>
+            <a href="chapters.html" title="Chapters">Chapters</a>
+            <a href="characters.html" title="Characters">Characters</a>
+            <a href="mechanics.html" title="Mechanics">Mechanics</a>
+            <a href="about.html" title="About Celeste">About</a>
 
-        </div>
-        <div id="next" class="switch"><span class="va">&gt;</span></div>
-        <div id="prev" class="switch"><span class="va">&lt;</span></div>
-    </div>
+            <button id="flash">Flash: ON</button>
+
+        </nav>
+        <section>
+            <section class="about-content">
+                <img class="celeste-logo" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Celeste_video_game_logo.png" alt="Celeste Logo">
+                <h1>
+                    About Celeste
+                </h1>
+                <hr>
+                <p>
+                    <span class="hl">Celeste</span>, released in <span class="hl">2018</span>, is an award winning platformer. It is a story about a young woman named <span class="hl">Madeline</span>, who is set upon scaling Celeste Mountain in order
+                    to confront her struggles.
+                </p>
+                <div id="carousel">
+                    <img class="slide" src="./slide1.png">
+                    <img class="slide" src="./bingus.gif">
+                    <img class="slide" src="slide3.jpg">
+                    <img class="slide" src="slide4.jpg">
+                    <img class="slide" src="slide5.jpg">
+                    <div id="c-imgs">
+
+                    </div>
+                    <div id="next" class="switch"><span class="va">&gt;</span></div>
+                    <div id="prev" class="switch"><span class="va">&lt;</span></div>
+                </div>
+                <hr>
+                <h1>The Creators</h1>
+                <hr>
+                <ul>
+                    <li>Maddy Thorson <span class="hn">Developer</span><span class="hn">Director</span><span class="hn">Writer</span></li>
+                    <li>Noel Berry <span class="hn">Developer</span><span class="hn">Artist</span></li>
+                    <li>Amora Bettany <span class="hn">Artist</span></li>
+                    <li>Pedro Medeiros <span class="hn">Artist</span></li>
+                    <li>Gabby DaRienzo <span class="hn">Artist</span></li>
+                    <li>Lena Raine <span class="hn">Composer</span></li>
+                </ul>
+                <section>
+
+                </section>
+            </section>
+        </section>
+    </main>
+
     <script src="./carousel.js"></script>
 </body>
 

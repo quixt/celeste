@@ -19,25 +19,25 @@ utt.addEventListener("click", () => {
 scroll.addEventListener("scroll", () => {
     scroll.scrollTop > 500 ? utt.style.visibility = "visible" : utt.style.visibility = "hidden";
     var scrollPos = scroll.scrollTop;
-    if (scrollPos >= 0 && scrollPos < 200) {
+    if (scrollPos >= 0 && scrollPos < 500) {
         if (background !== 1) {
             background = 1;
             setBackground("./firstch.jpg");
 
         }
-    } else if (scrollPos >= 200 && scrollPos < 1000) {
+    } else if (scrollPos >= 500 && scrollPos < 1300) {
         if (background !== 2) {
             background = 2;
             setBackground("./badeline.jpg");
         }
 
-    } else if (scrollPos >= 1000 && scrollPos < 1800) {
+    } else if (scrollPos >= 1300 && scrollPos < 2100) {
         if (background !== 3) {
             background = 3;
             setBackground("./theo.PNG");
         }
 
-    } else if (scrollPos >= 1800 && scrollPos < 2600) {
+    } else if (scrollPos >= 2100 && scrollPos < 2900) {
         if (background !== 4) {
             background = 4;
             setBackground("./hotel.jpg");

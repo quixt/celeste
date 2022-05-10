@@ -4,7 +4,7 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: linear-gradient(to bottom right, #2b0b23, #0d1631);
 }
 
@@ -41,7 +41,7 @@ nav a:hover {
 }
 
 #flash {
-    margin-top: 20vh;
+    margin-top: 10px;
     background-color: transparent;
     border: none;
     width: 8vw;

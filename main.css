@@ -10,6 +10,8 @@
 
 body {
     overflow-x: hidden;
+    margin:0;
+    padding:0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
@@ -21,9 +23,7 @@ main {
     background-image: url(cel.jpg);
     background-size: cover;
     height: 100vh;
-    padding-top: 1px;
     z-index: -10;
-    margin-top: -1px;
     display: grid;
     grid-template-columns: 20% 70% 10%;
     -webkit-transition: background-image 0.2s ease-in-out;

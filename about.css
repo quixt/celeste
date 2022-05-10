@@ -1,0 +1,59 @@
+main {
+    background-image: url(backdrop.jpg) !important;
+    text-align: center;
+}
+
+.about-content {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
+    background-color: rgba(94, 139, 255, 0.5);
+    overflow: scroll;
+    height: 100vh;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 0px 6px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    border: 2px solid #e2e2e2;
+    width: 40%;
+}
+
+.celeste-logo {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.hl {
+    color: rgb(255, 94, 94);
+}
+
+.about-content p,
+ul {
+    color: white;
+    font-size: 1.5vw;
+    font-family: "Celeste", sans-serif;
+    width: 70%;
+    /* text-align: justify;
+    text-justify: inter-word; */
+    display: block;
+    margin: 4vh auto;
+    line-height: 2.6vw;
+}
+
+li {
+    text-align: left;
+}
+
+.hn {
+    font-size: 1vw;
+    background-color: rgb(255, 94, 94);
+    padding: .4vw;
+    border-radius: .4vw;
+    margin-right: .3vw;
+}
