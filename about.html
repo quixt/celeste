@@ -29,6 +29,7 @@
         <section>
             <section class="about-content">
                 <img class="celeste-logo" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Celeste_video_game_logo.png" alt="Celeste Logo">
+                <hr>
                 <h1>
                     About Celeste
                 </h1>
@@ -59,6 +60,7 @@
                     <li>Pedro Medeiros <span class="hn">Artist</span></li>
                     <li>Gabby DaRienzo <span class="hn">Artist</span></li>
                     <li>Lena Raine <span class="hn">Composer</span></li>
+                    <li>Kevin Ragamey <span class="hn">Sound</span></li>
                 </ul>
                 <section>
 
@@ -66,7 +68,26 @@
             </section>
         </section>
     </main>
-
+    <script>
+        var flash = true;
+        const flashButton = document.getElementById("flash");
+        flashButton.addEventListener("click", () => {
+            if (flash) {
+                console.log("amogus")
+                flashButton.innerHTML = "Flash: OFF";
+                flash = false;
+                var style = document.createElement("style");
+                style.id = "flashy";
+                style.innerHTML = "nav a:hover{ color:#82f07f !important; }";
+                document.body.appendChild(style);
+            } else {
+                console.log("not_amogus")
+                flashButton.innerHTML = "Flash: ON";
+                flash = true;
+                document.getElementById("flashy").remove();
+            }
+        });
+    </script>
     <script src="./carousel.js"></script>
 </body>
 

@@ -1,0 +1,42 @@
+.mc {
+    font-size: 1vw;
+    background-color: rgb(255, 94, 94);
+    padding: .4vw;
+    color: white;
+    border-radius: .4vw;
+    margin: .3vw;
+    user-select: none;
+}
+
+.chapter {
+    text-align: center;
+    width: 50%;
+    background-color: rgba(94, 139, 255, 0.5);
+    height: 50vh;
+    padding: .5vh;
+    color: white;
+    margin: 5vh auto;
+}
+
+.chapter h2 {
+    color: white;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.5);
+    font-size: 2vw;
+    margin: 0;
+}
+
+.chapter h4 {
+    color: white;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.5);
+    font-size: 1vw;
+}
+
+hr {
+    border: 2px solid #e2e2e2;
+    width: 40%;
+}
+
+.scroll {
+    height: 100vh;
+    overflow-y: scroll;
+}

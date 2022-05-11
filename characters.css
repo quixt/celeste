@@ -60,7 +60,6 @@ main {
     color: white;
     margin: 0;
     padding: 10px;
-    transition: all .5s;
 }
 
 .char-img {

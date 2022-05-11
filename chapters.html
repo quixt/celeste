@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./chapters.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <img src="./climb.png" alt="Celeste Climb Button">
+            <a href="index.html" title="Home" class="big">CLIMB</a>
+            <a href="chapters.html" title="Chapters">Chapters</a>
+            <a href="characters.html" title="Characters">Characters</a>
+            <a href="mechanics.html" title="Mechanics">Mechanics</a>
+            <a href="about.html" title="About Celeste">About</a>
+
+            <button id="flash">Flash: ON</button>
+
+        </nav>
+        <section class="scroll">
+            <div id="1" class="chapter">
+                <h2>Chapter 1: Forsaken City</h2>
+                <hr>
+                <p>
+                    Chapter One is set in an old, abandoned city. The city is covered in snow and is in a derelict state. This is an entry level and displays many mechanics to be used later in the game.
+                    <h4>Introduces:</h4>
+                    <span class="mc">Strawberry</span><span class="mc">Winged Strawberry</span><span class="mc">Jump Crystals</span>
+
+                </p>
+            </div>
+            <div id="2" class="chapter">
+                <h2>Chapter 2: Old Site</h2>
+                <hr>
+                <p>
+                    Chapter Two is set in an old, creepy dungeon-like subterranen expanse. In this level you meet the other-self character, who is a representation of the players doubtful side.
+                    <h4>Introduces:</h4>
+                    <span class="mc">Star Blocks</span><span class="mc">Disappearing Platforms</span><span class="mc">Skull Binoculars</span>
+
+                </p>
+            </div>
+            <div id="3" class="chapter">
+                <h2>Chapter 3: Celestial Resort</h2>
+                <hr>
+                <p>
+                    Chapter Three is set in a hotel on Mount Celeste called the Celestial Resort. It has been out of business for years but is attended by a man named Mr. Oshiro, who struggles with his own personal demons.
+                    <h4>Introduces:</h4>
+                    <span class="mc">Keys &amp; Locks</span><span class="mc">Sinking Platforms</span><span class="mc">Sludge</span>
+
+                </p>
+            </div>
+        </section>
+    </main>
+    <script>
+        var flash = true;
+        const flashButton = document.getElementById("flash");
+        flashButton.addEventListener("click", () => {
+            if (flash) {
+                console.log("amogus")
+                flashButton.innerHTML = "Flash: OFF";
+                flash = false;
+                var style = document.createElement("style");
+                style.id = "flashy";
+                style.innerHTML = "nav a:hover{ color:#82f07f !important; }";
+                document.body.appendChild(style);
+            } else {
+                console.log("not_amogus")
+                flashButton.innerHTML = "Flash: ON";
+                flash = true;
+                document.getElementById("flashy").remove();
+            }
+        });
+    </script>
+</body>
+
+</html>

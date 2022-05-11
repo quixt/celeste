@@ -30,7 +30,7 @@ hr {
 }
 
 .hl {
-    color: rgb(255, 94, 94);
+    color: rgb(255, 110, 110);
 }
 
 .about-content p,
@@ -56,4 +56,5 @@ li {
     padding: .4vw;
     border-radius: .4vw;
     margin-right: .3vw;
+    user-select: none;
 }

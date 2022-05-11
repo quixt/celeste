@@ -10,8 +10,8 @@
 
 body {
     overflow-x: hidden;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
@@ -33,4 +33,15 @@ main {
 h1 {
     font-family: "Celeste";
     font-size: 5vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+    font-family: "Celeste", sans-serif;
 }
