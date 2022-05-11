@@ -34,7 +34,7 @@ scroll.addEventListener("scroll", () => {
     } else if (scrollPos >= 1300 && scrollPos < 2100) {
         if (background !== 3) {
             background = 3;
-            setBackground("./theo.PNG");
+            setBackground("./theo.png");
         }
 
     } else if (scrollPos >= 2100 && scrollPos < 2900) {
